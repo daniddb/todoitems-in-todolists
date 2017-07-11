@@ -1,0 +1,19 @@
+
+
+<p>
+  <strong>Item due:</strong>
+  <%= @todoitem.item_due %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @todoitem.description %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @todoitem.completed.humanize %>
+</p>
+
+<%= link_to 'Edit', edit_todolist_todoitem_path(@todolist, @todoitem) %> |
+<%= link_to 'Back', @todolist%>
